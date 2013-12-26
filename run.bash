@@ -11,7 +11,7 @@ pid1=$!
 
 pid2=$!
 
-echo "In the browser go to the url 'http://localhost:8998'"
+echo "In the browser go to the url 'http://localhost:8998/sim.html'"
 
 echo "Press ctrl+c to quit"
 
