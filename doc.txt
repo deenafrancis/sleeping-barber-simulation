@@ -1,0 +1,43 @@
+For sim.py
+==========
+Lock()
+------
+Lock.acquire([blocking])
+Acquire a lock, blocking or non-blocking.
+
+When invoked with the blocking argument set to True (the default), block until the lock is unlocked, then set it to locked and return True.
+
+When invoked with the blocking argument set to False, do not block. If a call with blocking set to True would block, return False immediately; otherwise, set the lock to locked and return True.
+
+Lock.release()
+Release a lock.
+
+When the lock is locked, reset it to unlocked, and return. If any other threads are blocked waiting for the lock to become unlocked, allow exactly one of them to proceed.
+
+When invoked on an unlocked lock, a ThreadError is raised.
+
+There is no return value.
+
+
+classes
+-------
+
+# BarberShop 
+functions:
+- openShop() --start the thread 
+
+Once a thread object is created, its activity must be started by calling the thread’s start() method. This invokes the run() method in a separate thread of control.
+
+Once the thread’s activity is started, the thread is considered ‘alive’. It stops being alive when its run() method terminates – either normally, or by raising an unhandled exception. The is_alive() method tests whether the thread is alive.
+
+--barberGoToWork
+--enterBarberShop
+
+
+#Customer
+functions:
+initialize the name as the argument name
+
+#Barber
+
+		
